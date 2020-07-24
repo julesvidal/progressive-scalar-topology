@@ -50,6 +50,21 @@ $ cmake -DCMAKE_INSTALL_PREFIX=../../install ..
 $ make -j$(nproc) install
 ```
 
+## Fetching the data
+
+Download the compressed archive containing the data, available at this link:
+https://nuage.lip6.fr/s/qZpXrbnTbxSnYzq/download
+
+Decompress the archive and move the resulting `data` folder into the
+`implementation` folder.
+
+```bash
+$ unzip data.zip
+$ mv data/ implementation/
+```
+
+
+
 
 ## Reproducing the paper results
 
