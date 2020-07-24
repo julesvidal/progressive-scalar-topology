@@ -4,14 +4,15 @@ A Progressive Approach to Scalar Field Topology
 This repository contains the proposed implementation described in the IEEE
 TVCG submission :
 
-"A Progressive Approach to Scalar Field Topology" submission.
+"A Progressive Approach to Scalar Field Topology"
 
 Authors: Jules Vidal (Sorbonne Université), Pierre Guillou (Sorbonne
 Université), Julien Tierny (CNRS, Sorbonne Université)
 
 ## Examine the code
 
-The implementation code is based on TTK. Most of the added code is
+The implementation code is based on The Topology ToolKit (TTK):
+https://topology-tool-kit.github.io/ . Most of the added code is
 available in the archive under the src/core/base/ directory hierarchy
 and consists in the following folders:
 * dynamicTree
