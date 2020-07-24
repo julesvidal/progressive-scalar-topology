@@ -11,7 +11,7 @@ Université), Julien Tierny (CNRS, Sorbonne Université)
 
 ## Examine the code
 
-The implementation code is based on The Topology ToolKit (TTK):
+The implementation code is based on the Topology ToolKit (TTK):
 https://topology-tool-kit.github.io/ . Most of the added code is
 available in the archive under the src/core/base/ directory hierarchy
 and consists in the following folders:
