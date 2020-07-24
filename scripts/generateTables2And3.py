@@ -185,22 +185,6 @@ for i in range(len(table[1:,8])):
     x=table[1:,8][i]
     table[1:,8][i]=format(x, '.2f')
 
-table2=[[""]*7]*perfTable.shape[0]
-table2=np.array(table2, dtype='object')
-table2[:,0]=np.array([text[0].upper()+text[1:] for text in perfTableSeq[:,0]])
-table2[:,1]=perfTableCPSeq[:,3]
-table2[:,2]=perfTableCPPara[:,3]
-table2[1:,3]=perfTableCPSeq[1:,3].astype(float)/perfTableCPPara[1:,3].astype(float) 
-table2[:,4]=perfTableSeq[:,3]
-table2[:,5]=perfTablePara[:,3]
-table2[1:,6]=perfTableSeq[1:,3].astype(float)/perfTablePara[1:,3].astype(float) 
-for i in range(len(table2[1:,6])):
-    x=table2[1:,6][i]
-    table2[1:,6][i]=format(x, '.2f')
-for i in range(len(table2[1:,3])):
-    x=table2[1:,3][i]
-    table2[1:,3][i]=format(x, '.2f')
-
 
 with open("./table2.tex","w") as f:
     f.write("\\begin{tabular}{|l|rrrr|rrrr|}\n")
@@ -216,16 +200,39 @@ with open("./table2.tex","w") as f:
     f.write("\\end{tabular}\n")
 
     f.close()
+
+
+table=[[""]*9]*perfTable.shape[0]
+table=np.array(table, dtype='object')
+table[:,0]=np.array([text[0].upper()+text[1:] for text in perfTablePara[:,0]])
+table[:,1]=perfTableCPPara[:,1]
+table[:,2]=perfTableCPPara[:,2]
+table[:,3]=perfTableCPPara[:,3]
+table[:,5]=perfTablePara[:,1]
+table[:,6]=perfTablePara[:,2]
+table[:,7]=perfTablePara[:,3]
+table[1:,4]=perfTableCPPara[1:,2].astype(float)/perfTableCPPara[1:,3].astype(float) 
+
+for i in range(len(table[1:,4])):
+    x=table[1:,4][i]
+    table[1:,4][i]=format(x, '.2f')
+
+table[1:,8]=perfTablePara[1:,2].astype(float)/perfTablePara[1:,3].astype(float) 
+for i in range(len(table[1:,8])):
+    x=table[1:,8][i]
+    table[1:,8][i]=format(x, '.2f')
+
 with open("./table3.tex","w") as f:
-    f.write("\\begin{tabular}{|l|rrr|rrr|}\n")
+    f.write("\\begin{tabular}{|l|rrrr|rrrr|}\n")
     # f.write("%s\\\\\n" % " & ".join(str(col).title() for col in table[0]))
     f.write("\hline\n")
-    f.write("    &\multicolumn{3}{c|}{Critical Points}&\multicolumn{3}{c|}{Persistence Diagram}\\\\\n")
-    f.write(" Data set &1 core&8 cores&{\\small Speedup}&  1 core& 8 cores & {\small Speedup}\\\\\n")
+    f.write("    &\multicolumn{4}{c|}{Critical Points}&\multicolumn{4}{c|}{Persistence Diagram}\\\\\n")
+    f.write(" Data set &TTK&NP&Prog &{\\small Speedup}& TTK & NP &  Prog & {\small Speedup}\\\\\n")
     # f.write("{Data set} & 1th & 8th & 1th & 8th& 1th & 8th\\\\\n")
     f.write("\hline\n")
-    for row in table2[1:]:
+    for row in table[1:]:
         f.write("%s\\\\\n" % " & ".join(col for col in row))
     f.write("\hline\n")
     f.write("\\end{tabular}\n")
+
     f.close()
