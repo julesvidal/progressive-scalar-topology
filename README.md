@@ -1,13 +1,14 @@
 A Progressive Approach to Scalar Field Topology
 ===============================================
 
-This repository contains the proposed implementation described in the IEEE
-TVCG submission :
+This repository contains the proposed implementation described in manuscript:
 
 "A Progressive Approach to Scalar Field Topology"
 
 Authors: Jules Vidal (Sorbonne Université), Pierre Guillou (Sorbonne
 Université), Julien Tierny (CNRS, Sorbonne Université)
+
+Link to the companion video: https://youtu.be/mDE3738UfWM
 
 ## Examine the code
 
