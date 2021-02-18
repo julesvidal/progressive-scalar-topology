@@ -76,9 +76,16 @@ $ mv data/ implementation/
 
 ## Reproducing the paper results
 
+We propose to reproduce the quantitative results of the paper that
+make use of our progressive method for the computation of persistence
+diagrams. Scripts are provided to reproduce the comparative results of tables
+2 and 3, as well as one of the figures of the paper that illustrates the
+visual convergence of our persistence diagrams: figure 15.
+
 The *data* folder contains all the datasets used in this submission.
-The *scripts* folder contains Shell and Python scripts used to generate the quantitative
-results proposed (tables 2 and 3).
+
+### Tables
+The *scripts* folder contains Shell and Python scripts used to generate the tables 2 and 3.
 
 To reproduce those results, please move to the *scripts* folder and run the
 benchmarks (it takes a couple hours, as results are averaged on twelve runs
@@ -97,6 +104,24 @@ $ python generateTables2and3.py
 ```
 
 The TEX files *table2.tex* and *table3.tex* will be generated.
+
+### Figure 15
+The *scripts* folder also contains a script `fig15.sh` and a ParaView state
+file `fig15.pvsm` that can be used to reproduce the visual results of figure 15.
+
+To reproduce the results, please run the bash script:
+
+```bash
+$ bash fig15.sh
+```
+
+The results can be visualized using ParaView (https://www.paraview.org/).
+Please install the corresponding package and run the paraview state file:
+
+```bash
+$ sudo apt install paraview
+$ paraview --state=fig15.pvsm
+```
 
 ## Using the standalone executables
 
