@@ -95,7 +95,7 @@ each):
 
 ```bash
 $ cd scripts
-$ bash bench_pd.sh
+$ bash benchs_pd.sh
 $ bash benchs_cp.sh
 ```
 
