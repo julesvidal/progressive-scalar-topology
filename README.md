@@ -8,6 +8,8 @@ This repository contains the proposed implementation described in manuscript:
 Authors: Jules Vidal (Sorbonne Université), Pierre Guillou (Sorbonne
 Université), Julien Tierny (CNRS, Sorbonne Université)
 
+Link to the paper: https://arxiv.org/pdf/2007.14766.pdf 
+
 Link to the companion video: https://youtu.be/mDE3738UfWM
 
 ## Examine the code
