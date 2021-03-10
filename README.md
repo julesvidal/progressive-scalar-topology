@@ -98,7 +98,7 @@ $ bash benchs_pd.sh
 $ bash benchs_cp.sh
 ```
 
-Once the computation is done, you may run the Python scripts to generate the results, directly as LATEX tables:
+Once the computation is done, you may run the Python scripts to generate the results, directly as <img src="https://render.githubusercontent.com/render/math?math=\LaTeX"> tables:
 
 ```bash
 $ python generateTables2and3.py
@@ -107,12 +107,12 @@ $ python generateTables2and3.py
 The TEX files *table2.tex* and *table3.tex* will be generated.
 
 To generate a pdf file displaying the results, please compile the tex file
-`tableOutputs.tex`. For instance using `pdflatex`:
+*tableOutputs.tex*. For instance using `pdflatex`:
 
 ``` bash
 $ pdflatex tableOutputs.tex
 ```
-It will generate the pdf file `tableOutput.pdf` containing the two tables with captions.
+It will generate the pdf file *tableOutput.pdf* containing the two tables with captions.
 
 ### Figure 15
 The *scripts* folder also contains a script `fig15.sh` and a ParaView state
