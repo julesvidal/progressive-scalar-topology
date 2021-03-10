@@ -112,7 +112,7 @@ To generate a pdf file displaying the results, please compile the tex file
 ``` bash
 $ pdflatex tableOutputs.tex
 ```
-It will generate the pdf file `tableOutput.pdf`, contains the tables with corresponding captions.
+It will generate the pdf file `tableOutput.pdf` containing the two tables with captions.
 
 ### Figure 15
 The *scripts* folder also contains a script `fig15.sh` and a ParaView state
