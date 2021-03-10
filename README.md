@@ -42,18 +42,17 @@ $ sudo apt install -y g++ cmake libvtk7-dev python3
 This might take some time, depending on the number of already
 installed packages on the target system.
 
-Now, move the compressed archive to your working directory and
-decompress it.
+Now, please clone the git repository in your working directory:
 
 ```bash
-$ unzip implementation.zip
+$ git clone https://github.com/julesvidal/progressive-scalar-topology.git
 ```
 
 To build the proposed implementation and install it in a local
 directory, please use the following commands:
 
 ```bash
-$ cd implementation/src
+$ cd progressive-scalar-topology/src
 $ mkdir build && cd build
 $ cmake -DCMAKE_INSTALL_PREFIX=../../install ..
 $ make -j$(nproc) install
@@ -66,11 +65,11 @@ Download the compressed archive containing the data, available at this link:
 https://nuage.lip6.fr/s/qZpXrbnTbxSnYzq/download
 
 Decompress the archive and move the resulting `data` folder into the
-`implementation` folder.
+`progressive-scalar-topology` folder.
 
 ```bash
 $ unzip data.zip
-$ mv data/ implementation/
+$ mv data/ progressive-scalar-topology/
 ```
 
 
