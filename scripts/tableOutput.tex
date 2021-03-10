@@ -1,0 +1,35 @@
+\documentclass{article}
+
+\usepackage{caption}
+
+\begin{document}
+
+\begin{table}[t]
+\vspace{-1ex}
+    \centering
+    \input{table2.tex}
+  \vspace{0.5em}
+    \caption*{Table 2: Sequential computation times (in seconds) of our algorithms for
+            critical point extraction (left) and persistence diagram computation
+            (right). The columns \emph{TTK} report the run times of the default
+            implementations provided by the Topology ToolKit. The columns \emph{NP} and
+            \emph{Prog} respectively report the timings for the non-progressive
+            (directly initialized at the final hierarchy level)  and  progressive
+            versions of our algorithms.}
+\end{table}
+
+
+\begin{table}
+    \centering
+    \input{table3.tex}
+  \vspace{0.5em}
+  \caption*{Table 3: Parallel computation times (in seconds, 8 cores) of our algorithms
+          for critical point extraction (left) and persistence diagram computation
+          (right). The columns \emph{TTK} report the run times of the default
+          implementations provided by the Topology ToolKit. The columns \emph{NP} and
+          \emph{Prog} respectively report the timings for the non-progressive (directly
+          initialized at the final hierarchy level)  and  progressive versions of our
+          algorithms.}
+\end{table}
+
+\end{document}
