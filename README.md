@@ -10,7 +10,12 @@ Université), Julien Tierny (CNRS, Sorbonne Université)
 
 Link to the paper: https://arxiv.org/pdf/2007.14766.pdf 
 
-Link to the companion video: https://youtu.be/mDE3738UfWM
+Companion video:
+
+https://user-images.githubusercontent.com/42967827/141285484-fbd344fe-10af-431b-945e-b2d6360a5f8c.mp4
+
+
+(watch on youtube: https://youtu.be/mDE3738UfWM)
 
 ## Examine the code
 
